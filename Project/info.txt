@@ -1,0 +1,17 @@
+
+
+
+Amazon :
+
+
+Product{ id,name, companyname, price, category }
+
+Userlogin{
+    id,username, password
+}
+
+UserDetails{ id address, age , phonenumber}
+
+Order{ userId, [product], createdTime}
+
+Card{User, product}
