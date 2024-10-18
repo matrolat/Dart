@@ -1,0 +1,49 @@
+
+
+Classes
+Objects
+Constructor:
+    - Named Param  ({this.name})   call (name : "ASDf")
+    {
+        In named param we can use default values ({this.name="Asdf})
+    }
+    - Parameterized (this.name,this.age)    call ("ASDF",565)
+    {
+        order has to be same
+        In Parameterized, default values are given inside array []
+        (this.name, [this.age = 0])
+
+    }
+    - **********
+    When you want to use both, dart doesnt support overloading
+
+    Here u can create default as u used to.
+    But, named Constructor:
+        Student.namedConstructor( this.name, [this.age = 0] )
+
+
+    ***********
+
+    - Constructor cannot return values, but inorder to return instance
+    use  --Factory Constructor--
+
+
+
+        {******
+                Parent: a,draw() 
+                CHild :b, draw()
+
+
+                Parent ref = CHild ()
+                ref.draw()
+        *****}
+
+
+
+    - Constant Constructor:
+        specify values as final,
+        write const while defining and using the constructor
+
+
+Encapsultion:
+Hiding data - by using _ before var name
