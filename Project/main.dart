@@ -118,7 +118,7 @@ void main() {
     print("id: ${a.id} | name: ${a.name} | price: ${a.price} | category: ${a.category} ");
   }
 
-  UserDetails u1 = UserDetails("sameer", "password", "pune", 21, "1234567890");
+  UserDetails u1 = UserDetails("Sameer Swankar", "password", "pune", 21, "1234567890");
 
   stdout.write("Enter Products (id) you want to buy (comma separated): ");
   String? cart = stdin.readLineSync();
@@ -134,8 +134,9 @@ void main() {
   Order o1 = Order();
   o1.createOrder(selectedProducts, u1);
 
-  print("User: ${o1.user?.username}");
-  print("\nTotal Bill:  ${o1.totalPrice}");
+  print("\nUser: ${o1.user?.username}");
+  print("Total Bill:  ${o1.totalPrice}");
+  print("Date Time:  ${o1.createdDateTime}");
 
   print("\nOrdered Products:");
   for (var p in selectedProducts) {
